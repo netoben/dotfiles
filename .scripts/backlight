@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Adjust Keyboard Backlight
+setpci -v H1 -s 00:01.00 BRIDGE_CONTROL=0
+echo "Value: "
+read value
+echo $value > /sys/class/leds/smc::kbd_backlight/brightness
+echo "Done"
