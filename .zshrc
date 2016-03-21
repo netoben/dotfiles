@@ -2,7 +2,7 @@
 export ZSH=/home/iyyel/.oh-my-zsh
 
 # Alias source
-source ~/.aliases.sh
+source ~/.aliases
 
 # Set name of the theme to load.
 ZSH_THEME="theunraveler"

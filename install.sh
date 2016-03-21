@@ -31,7 +31,7 @@ echo "Don't forget to manually cp mbpfan.conf to /etc/mbpfan.conf!"
 
 if ask "Install symlink for .zshrc?" Y; then
   ln -sf ${dir}/.zshrc ${HOME}/.zshrc
-  ln -sf ${dir}/.aliases.sh ${HOME}/.aliases.sh
+  ln -sf ${dir}/.aliases ${HOME}/.aliases
 fi
 
 if ask "Install symlink for .config/nvim?" Y; then
@@ -54,8 +54,8 @@ if ask "Install symlink for .config/i3/config?" Y; then
   ln -sfn ${dir}/.config/i3/config ${HOME}/.config/i3/config
 fi
 
-if ask "Install symlink for .fonts?" Y; then
-  ln -sf ${dir}/.fonts ${HOME}/.fonts
+if ask "Install symlink for .local/share/fonts?" Y; then
+  ln -sf ${dir}/.local/share/fonts ${HOME}/.local/share/fonts
 fi
 
 if ask "Install symlink for .scripts?" Y; then
