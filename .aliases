@@ -2,3 +2,5 @@
 alias v='nvim'
 alias sf='screenfetch'
 alias sc='scrot'
+alias irc='weechat'
+alias freq='cpupower frequency-info'
