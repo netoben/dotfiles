@@ -174,7 +174,7 @@ bindsym $mod+shift+x exec /home/iyyel/.scripts/lock
 
 # Exec
 exec firefox
-exec compton -f
+exec compton -fb
 
 # Exec_always
 exec_always xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output eDP --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-0 --off

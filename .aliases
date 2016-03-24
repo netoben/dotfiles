@@ -5,9 +5,6 @@ alias sf='screenfetch'
 alias sc='scrot'
 alias freq='cpupower frequency-info'
 
-# git
-alias gs='git status'
-
 # nvim
 alias v='nvim'
 
