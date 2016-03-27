@@ -18,18 +18,18 @@ set $base0D #97bbf7
 set $base0E #c0b7f9
 set $base0F #fcc09e
 
-# General configuration
+# General Configuration
 font pango: SFNS Display 11
 floating_modifier $mod
 hide_edge_borders both
 new_window none
 
-# General bindings
+# General Bindings
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 540 -opacity "85" -bw 0 -bc "$base01" -bg "$base01" -fg "$base07" -hlbg "$base01" -hlfg "#9575cd" -font "Source Code Pro 15"
 
-# Change focus
+# Change Focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
@@ -41,7 +41,7 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# Move focused window
+# Move Focused Window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
@@ -174,8 +174,8 @@ bindsym $mod+shift+x exec /home/iyyel/.scripts/lock
 
 # Exec
 exec firefox
-exec compton -fb
 
 # Exec_always
+exec_always compton -fb
 exec_always xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output eDP --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-0 --off
 exec_always feh --bg-scale /home/iyyel/Pictures/Wallpapers/arch_wallpaper.png
