@@ -29,9 +29,13 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 540 -opacity "85" -bw 0 -bc "$base01" -bg "$base01" -fg "$base07" -hlbg "$base01" -hlfg "#9575cd" -font "Source Code Pro 15"
 
-bindsym XF86AudioPlay        exec cmus-remote --pause
-bindsym XF86AudioNext        exec cmus-remote --next && killall -USR1 i3blocks
-bindsym XF86AudioPrev        exec cmus-remote --prev && killall -USR1 i3blocks
+# Own Bindings
+bindsym XF86AudioPlay        exec mpc toggle
+bindsym XF86AudioNext        exec mpc next
+bindsym XF86AudioPrev        exec mpc prev
+# TEMPORARY VOLUME BINDS!
+bindsym XF86AudioRaiseVolume exec mpc volume +2
+bindsym XF86AudioLowerVolume exec mpc volume -2
 
 # Change Focus
 bindsym $mod+j focus left
@@ -179,6 +183,7 @@ bindsym $mod+shift+x exec /home/iyyel/.scripts/lock
 # Exec
 exec firefox
 exec compton -fb
+exec mpd ~/.config/mpd/mpd.conf
 
 # Exec_always
 exec_always xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output eDP --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-0 --off
