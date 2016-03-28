@@ -30,12 +30,13 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 540 -opacity "85" -bw 0 -bc "$base01" -bg "$base01" -fg "$base07" -hlbg "$base01" -hlfg "#9575cd" -font "Source Code Pro 15"
 
 # Own Bindings
-bindsym XF86AudioPlay        exec mpc toggle
-bindsym XF86AudioNext        exec mpc next
-bindsym XF86AudioPrev        exec mpc prev
+bindsym $mod+shift+XF86LaunchB  exec scrot
+bindsym XF86AudioPlay           exec mpc toggle
+bindsym XF86AudioNext           exec mpc next
+bindsym XF86AudioPrev           exec mpc prev
 # TEMPORARY VOLUME BINDS!
-bindsym XF86AudioRaiseVolume exec mpc volume +2
-bindsym XF86AudioLowerVolume exec mpc volume -2
+bindsym XF86AudioRaiseVolume    exec mpc volume +2
+bindsym XF86AudioLowerVolume    exec mpc volume -2
 
 # Change Focus
 bindsym $mod+j focus left
